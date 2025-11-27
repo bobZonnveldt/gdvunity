@@ -7,8 +7,8 @@ public class randomItem : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Return))PrintRandomItem();
-        if(Input.GetKeyDown(KeyCode.KeypadEnter))PrintAllItems();
+        if(Input.GetKeyDown(KeyCode.Escape))PrintRandomItem();
+        if(Input.GetKeyDown(KeyCode.Backspace))PrintAllItems();
     }
     private void PrintRandomItem() {
         int i = Random.Range(0, spawnPoints.Length);
